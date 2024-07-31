@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="41cdcc6497b70210fee6fefce053af3b" label="SpecOpsTest" max_length="40" name="x_1201200_sealteam_specopstest" type="collection">
+        <element label="number" max_length="40" name="number" type="string"/>
+    </element>
+</database>

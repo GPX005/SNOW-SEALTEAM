@@ -5,6 +5,7 @@
         <element label="Serial No." max_length="40" name="wid" type="integer"/>
         <element attributes="edge_encryption_enabled=true" display="true" label="Description" max_length="40" name="description" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Make" max_length="40" name="make" type="string"/>
+        <element default="number.getDisplayValue();" function_definition="number.getDisplayValue();" function_field="true" label="SearchNameText" max_length="40" name="searchnametext" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Type" max_length="40" name="type" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="InServiceDate" max_length="40" name="inservicedate" type="glide_date"/>
     </element>
