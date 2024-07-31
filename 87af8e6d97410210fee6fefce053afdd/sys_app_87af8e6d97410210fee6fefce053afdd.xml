@@ -13,7 +13,7 @@
         <license_category>none</license_category>
         <license_definition/>
         <license_model>none</license_model>
-        <logo/>
+        <logo>30a4fb5097370210fee6fefce053af47</logo>
         <menu/>
         <name>SEALTEAM</name>
         <package_json/>
@@ -32,9 +32,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-03-19 23:49:04</sys_created_on>
         <sys_id>87af8e6d97410210fee6fefce053afdd</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-03-19 23:49:04</sys_updated_on>
+        <sys_updated_on>2024-07-31 02:50:28</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <uninstall_blocked>false</uninstall_blocked>
@@ -44,4 +44,43 @@
         <version>1.0.0</version>
     </sys_app>
     <sys_translated_text action="delete_multiple" query="documentkey=87af8e6d97410210fee6fefce053afdd"/>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/jpeg</content_type>
+        <file_name>SealTeam.jfif</file_name>
+        <hash>1958d88f989b322a8726dc91a0b3afda0f4ba1963f48d1627c08a42fdf9c5aa0</hash>
+        <image_height>225</image_height>
+        <image_width>225</image_width>
+        <size_bytes>5786</size_bytes>
+        <size_compressed>5770</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-31 02:50:27</sys_created_on>
+        <sys_id>30a4fb5097370210fee6fefce053af47</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-31 02:50:28</sys_updated_on>
+        <table_name>sys_app</table_name>
+        <table_sys_id>87af8e6d97410210fee6fefce053afdd</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="SealTeam.jfif" sys_id="30a4fb5097370210fee6fefce053af47">30a4fb5097370210fee6fefce053af47</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-31 02:50:27</sys_created_on>
+        <sys_id>70a4fb5097370210fee6fefce053af47</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>7680</length>
+        <position>1</position>
+        <sys_attachment display_value="SealTeam.jfif" sys_id="30a4fb5097370210fee6fefce053af47">30a4fb5097370210fee6fefce053af47</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-31 02:50:27</sys_created_on>
+        <sys_id>f0a4fb5097370210fee6fefce053af47</sys_id>
+    </sys_attachment_doc>
 </record_update>
