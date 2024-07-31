@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="55c5739497370210fee6fefce053afc8" label="SpecOps_WeaponCheckout" max_length="40" name="x_1201200_sealteam_specops_weaponcheckout" type="collection">
         <element label="DateOut" max_length="40" name="dateout" type="glide_date"/>
-        <element dependent="weaponserial.description" dependent_on_field="weaponserial.description" label="Weapon" max_length="40" name="weaponserial" reference="x_1201200_sealteam_specop_weapons" type="reference" use_dependent_field="true"/>
+        <element label="WeaponName" max_length="32" name="weaponname" reference="x_1201200_sealteam_specop_weapons" type="reference"/>
+        <element attributes="ref_auto_completer=AJAXTableCompleter,ref_ac_columns_search=true,ref_ac_columns=weaponname;weaponserial" dependent="weaponserial.description" dependent_on_field="weaponserial.description" label="Weapon" max_length="40" name="weaponserial" reference="x_1201200_sealteam_specop_weapons" type="reference" use_dependent_field="true"/>
         <element label="WeaponUser" max_length="40" name="weaponuser" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="DateIn" max_length="40" name="datein" type="glide_date"/>
+        <index name="index">
+            <element name="weaponname"/>
+        </index>
     </element>
 </database>
