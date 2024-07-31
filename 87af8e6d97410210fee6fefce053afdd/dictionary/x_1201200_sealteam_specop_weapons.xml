@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="01e36bd497b30210fee6fefce053af7c" label="SpecOp_Weapons" max_length="40" name="x_1201200_sealteam_specop_weapons" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Model" max_length="40" name="model" type="string"/>
+        <element label="Serial No." max_length="40" name="wid" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Make" max_length="40" name="make" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Type" max_length="40" name="type" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="InServiceDate" max_length="40" name="inservicedate" type="glide_date"/>
+    </element>
+</database>

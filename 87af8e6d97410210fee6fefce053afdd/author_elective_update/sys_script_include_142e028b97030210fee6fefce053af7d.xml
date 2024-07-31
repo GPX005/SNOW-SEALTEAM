@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_1201200_sealteam.GPXUtil</api_name>
+        <caller_access>1</caller_access>
+        <client_callable>false</client_callable>
+        <description>GPX Utils </description>
+        <name>GPXUtil</name>
+        <script><![CDATA[//-------------------------------------------------------------------------------
+// Script Execution:
+//   var gpxgo = new GPXUtil();
+//   gpxgo.gpxTestFun('Take');
+//-------------------------------------------------------------------------------
+var GPXUtil = Class.create();
+GPXUtil.prototype = {
+    initialize: function() {
+    },
+	// GPX Test function to update selected 
+	gpxTestFun: function(){
+		var SpecOpsMission = new GlideRecord('u_specops_mission');
+		//SpecOpsMission.addQuery('short_description','CONTAINS',qryText); 
+		//SpecOpsMission.query();
+		while(SpecOpsMission.next()){
+			//Logic you want to execute.  
+			SpecOpsMission.priority = "1";  // Critical  1 
+			SpecOpsMission.state = "3";     // Closed Complete  3
+			SpecOpsMission.update();
+		//return SpecOpsMission;
+		gs.info('GPX - Called gpxTestFun: function()');
+		}
+	},
+
+    type: 'GPXUtil'
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-02 01:39:18</sys_created_on>
+        <sys_id>142e028b97030210fee6fefce053af7d</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>GPXUtil</sys_name>
+        <sys_package display_value="SEALTEAM" source="x_1201200_sealteam">87af8e6d97410210fee6fefce053afdd</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SEALTEAM">87af8e6d97410210fee6fefce053afdd</sys_scope>
+        <sys_update_name>sys_script_include_142e028b97030210fee6fefce053af7d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-02 03:46:50</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="SEALTEAM">87af8e6d97410210fee6fefce053afdd</application>
+        <file_path/>
+        <instance_id>db9edc971b223d1452a243f4bd4bcbb4</instance_id>
+        <instance_name>dev220101</instance_name>
+        <name>sys_script_include_142e028b97030210fee6fefce053af7d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;false&lt;/active&gt;&lt;api_name&gt;x_1201200_sealteam.GPXUtil&lt;/api_name&gt;&lt;caller_access&gt;1&lt;/caller_access&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;GPX Utils &lt;/description&gt;&lt;name&gt;GPXUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[//-------------------------------------------------------------------------------
+// Script Execution:
+//   var gpxgo = new GPXUtil();
+//   gpxgo.gpxTestFun('Take');
+//-------------------------------------------------------------------------------
+var GPXUtil = Class.create();
+GPXUtil.prototype = {
+    initialize: function() {
+    },
+	// GPX Test function to update selected 
+	gpxTestFun: function(){
+		var SpecOpsMission = new GlideRecord('u_specops_mission');
+		//SpecOpsMission.addQuery('short_description','CONTAINS',qryText); 
+		//SpecOpsMission.query();
+		while(SpecOpsMission.next()){
+			//Logic you want to execute.  
+			SpecOpsMission.priority = "1";  // Critical  1 
+			SpecOpsMission.state = "3";     // Closed Complete  3
+			SpecOpsMission.update();
+		//return SpecOpsMission;
+		gs.info('GPX - Called gpxTestFun: function()');
+		}
+	},
+
+    type: 'GPXUtil'
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-07-02 01:39:18&lt;/sys_created_on&gt;&lt;sys_id&gt;142e028b97030210fee6fefce053af7d&lt;/sys_id&gt;&lt;sys_mod_count&gt;13&lt;/sys_mod_count&gt;&lt;sys_name&gt;GPXUtil&lt;/sys_name&gt;&lt;sys_package display_value="SEALTEAM" source="x_1201200_sealteam"&gt;87af8e6d97410210fee6fefce053afdd&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="SEALTEAM"&gt;87af8e6d97410210fee6fefce053afdd&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_142e028b97030210fee6fefce053af7d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-07-02 03:46:50&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1590885031</payload_hash>
+        <record_name>GPXUtil</record_name>
+        <reverted_from/>
+        <source>b36086e097c70210fee6fefce053af18</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-02 03:46:50</sys_created_on>
+        <sys_id>447ba6cf97830210fee6fefce053afb1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190718d65880000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-02 03:46:50</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c87ba6cfee8302103944413d0bbfc1b0</update_guid>
+        <update_guid_history>c87ba6cfee8302103944413d0bbfc1b0:1590885031,5358ee4b1683021022bca2aa68b9fc9d:-1569581100,be96ae0b57830210edf1d381c1a1e489:-196025294,4f6626835d430210f2a9e225112573a9:-1927186542,3b16220be883021016a4d0f5ff3d2206:-1050162074,c2e5220b788302101d1f847c1e82bb6d:1693449167,07e3128317430210e877d786ece86e4f:-889743793,67b312833a4302101389e7d065a15010:-779364158,1de25e031b430210745f32de8a208728:-414456348,94b2d603064302106a99db7f1a051e8b:-1464713898,2392d64f79030210e76b3e1c13733536:-370351274,f9d1964faf0302105f02b79f16264c6e:1005654107,e2a1560fbd030210ff95163acdcc5a77:-1613132358,773e420b9803021047e27d84b1070121:-844390820</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-02 03:48:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>9abbf309904c48a3bfdffd9731eea951</sys_id>
+        <sys_metadata>142e028b97030210fee6fefce053af7d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GPXUtil</sys_name>
+        <sys_package display_value="SEALTEAM" source="x_1201200_sealteam">87af8e6d97410210fee6fefce053afdd</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="SEALTEAM">87af8e6d97410210fee6fefce053afdd</sys_scope>
+        <sys_scope_delete display_value="">2a0b051fda5b4288b7dec9af5e5bf459</sys_scope_delete>
+        <sys_update_name>sys_script_include_142e028b97030210fee6fefce053af7d</sys_update_name>
+        <sys_update_version display_value="sys_script_include_142e028b97030210fee6fefce053af7d">447ba6cf97830210fee6fefce053afb1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-02 03:48:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

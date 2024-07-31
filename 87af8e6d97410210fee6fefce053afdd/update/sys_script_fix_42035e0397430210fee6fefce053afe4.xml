@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description>GPX</description>
+        <name>GPX-UtilTest</name>
+        <record_for_rollback>true</record_for_rollback>
+        <script><![CDATA[//-------------------------------------------------------------------------------
+// Script Execution:
+var GPXUtil = Class.create();
+GPXUtil.prototype = {
+    initialize: function() {
+    },
+	// GPX Test function to update selected 
+	gpxTestFun: function(qryText){
+		var SpecOpsMission = new GlideRecord('u_specops_mission');
+		SpecOpsMission.addEncodedQuery("short_descriptionSTARTSWITH" + qryText); 
+		SpecOpsMission.query();
+		while(SpecOpsMission.next()){
+			//Logic you want to execute.  
+			SpecOpsMission.priority = "1";  // Critical  1 
+			SpecOpsMission.state = "3";     // Closed Complete  3
+			SpecOpsMission.update();
+		//return SpecOpsMission;
+		gs.info('GPX - Called gpxTestFun: function( '+qryText+' )');
+		
+		}
+	},
+
+    type: 'GPXUtil'
+}
+
+var gpxgo = new GPXUtil();
+gpxgo.gpxTestFun('Take');
+
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-02 02:00:44</sys_created_on>
+        <sys_id>42035e0397430210fee6fefce053afe4</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>GPX-UtilTest</sys_name>
+        <sys_package display_value="SEALTEAM" source="x_1201200_sealteam">87af8e6d97410210fee6fefce053afdd</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="SEALTEAM">87af8e6d97410210fee6fefce053afdd</sys_scope>
+        <sys_update_name>sys_script_fix_42035e0397430210fee6fefce053afe4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-02 03:47:43</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>
